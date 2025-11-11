@@ -38,4 +38,15 @@ Los recursos compartidos (productos, recaudación, archivo de log, etc.) se gest
 
 ---
 
+## ⚙️ Tecnologías utilizadas
+
+- **Java 17+**
+- **NetBeans IDE**
+- **Programación Concurrente**
+- **Programación Distribuida (RMI / Sockets)**
+- **Swing (Interfaz gráfica)**
+- **Git / GitHub**
+
+---
+
 ## 🧱 Estructura del proyecto
