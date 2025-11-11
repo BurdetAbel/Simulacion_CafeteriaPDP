@@ -50,3 +50,7 @@ Los recursos compartidos (productos, recaudación, archivo de log, etc.) se gest
 ---
 
 ## 🧱 Estructura del proyecto
+
+(((Esta imagen es temporal))))
+<img width="855" height="677" alt="image" src="https://github.com/user-attachments/assets/ef218a44-faa3-46e3-bfa0-14a7d7787a84" />
+
