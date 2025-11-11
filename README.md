@@ -38,6 +38,55 @@ Los recursos compartidos (productos, recaudación, archivo de log, etc.) se gest
 
 ---
 
+
+## 🧱 Estructura del proyecto
+
+(((Esta imagen es temporal))))
+<img width="855" height="677" alt="image" src="https://github.com/user-attachments/assets/ef218a44-faa3-46e3-bfa0-14a7d7787a84" />
+
+
+---
+
+## 🧮 Recursos y sincronización
+
+Los recursos críticos como el **aforo**, las **unidades de productos** y la **recaudación** se controlan mediante:
+
+- `Semaphore` → para limitar acceso a zonas.  
+- `ReentrantLock` → para proteger recursos compartidos.  
+- `AtomicInteger` → para contadores concurrentes.  
+- `wait()` / `notifyAll()` → para pausas y reanudaciones del sistema.
+
+---
+
+## 🧾 Registro de eventos
+
+Cada evento del sistema se almacena en `logs/evolucion_cafeteria.txt` con la siguiente estructura:
+
+
+El log es un **recurso compartido sincronizado** accesible por todos los hilos.
+
+---
+
+## 🎨 Interfaz gráfica
+
+- Muestra en tiempo real:
+  - Número de clientes en cada zona.
+  - Unidades de café y rosquillas en despensa y mostrador.
+  - Recaudación total.
+- Incluye un botón **Pausar/Reanudar** que detiene o continúa la simulación.
+- Usa componentes **Swing** (`JFrame`, `JButton`, `JLabel`, `Timer`).
+
+---
+
+## 🌐 Parte distribuida (RMI o Sockets)
+
+La segunda parte del proyecto amplía la simulación con un **cliente remoto** que:
+- Consulta el número de actores en cada zona.
+- Muestra el estado actualizado cada segundo.
+- Permite pausar y reanudar la ejecución del servidor.
+
+---
+
 ## ⚙️ Tecnologías utilizadas
 
 - **Java 17+**
@@ -49,8 +98,12 @@ Los recursos compartidos (productos, recaudación, archivo de log, etc.) se gest
 
 ---
 
-## 🧱 Estructura del proyecto
+## 🧑‍💻 Autores
 
-(((Esta imagen es temporal))))
-<img width="855" height="677" alt="image" src="https://github.com/user-attachments/assets/ef218a44-faa3-46e3-bfa0-14a7d7787a84" />
+- Abel Burdet
+- Cristian Jimenez Lago 
 
+Grado en Ingeniería en Sistemas de Información  
+Convocatoria Ordinaria – Enero 2026
+
+---
